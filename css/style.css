@@ -154,7 +154,7 @@ nav {
 	width: 70vw;
 	margin: auto;
 	height: 100vh;
-	/* border:2px solid red; */
+	/* border: 2px solid red; */
 	text-align: center;
 	margin-top: 50px;
 	padding: 30px 0px;
@@ -300,37 +300,47 @@ nav {
 }
 .gallary-intro {
 	display: flex;
-	max-width: 70%;
 	margin: auto;
 	justify-content: center;
-	/* border: 2px solid red; */
+	padding-bottom: 1rem;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }
 
+.gallary-text p {
+	width: 70%;
+}
 .gallary-text {
-	color: black;
+	color: #676662;
 	max-width: 50%;
 	font-size: 15px;
-	text-align: right;
-	margin-right: 40px;
+	text-align: left;
 	letter-spacing: 1px;
 	padding: 10px 0px;
 	line-height: 28px;
+	margin-left: 10px;
+	align-items: flex-start;
+}
+.gallary-service {
+	text-align: right;
+	margin-right: 20px;
+	width: 50%;
+	align-items: flex-end;
 }
 .gallary-service h2 {
 	color: black;
 	font-size: 37px;
-	text-align: left;
 	line-height: 50px;
 }
 .gallary-listing {
 	display: flex;
-	max-width: 80%;
+	max-width: 75%;
 	margin: auto;
-	align-content: space-between;
+	align-content: space-around;
 }
 .gallary-one {
 	max-width: 50%;
-	height: min-content;
 }
 
 .big-image,
@@ -356,24 +366,12 @@ nav {
 
 .gallary-two {
 	max-width: 50%;
-	/* height: max-content; */
-	height: min-content;
 }
 
 .row-flex {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.long {
-	max-width: 45%;
-	height: 30%;
-	margin: 10px;
-}
-
-.long img {
-	max-width: 100%;
+	justify-content: space-evenly;
 }
 
 .stats {
@@ -405,4 +403,28 @@ nav {
 	font-size: 22px;
 	color: black;
 	margin: 10px;
+}
+
+.black-text {
+	color: black;
+}
+
+.features {
+	width: 70vw;
+	margin: auto;
+	height: 100vh;
+	/* border: 2px solid red; */
+	text-align: center;
+	margin-top: 50px;
+	padding: 30px 0px;
+	margin-bottom: 100px;
+}
+
+.features-listing {
+	text-align: left;
+	width: auto;
+	max-width: 50%;
+	/* margin:auto; */
+	border: 2px solid red;
+	flex: 0 0 50%;
 }

@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
-	font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
-		sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -148,6 +148,7 @@ nav {
 .leaf-img {
 	max-width: 50%;
 	padding: 0px 60px;
+	flex: 0 0 41.666667%;
 }
 
 .about-us {
@@ -186,6 +187,7 @@ nav {
 	display: flex;
 	align-content: space-between;
 	margin-top: 8%;
+	flex-wrap: wrap;
 }
 
 .mission {
@@ -287,7 +289,6 @@ nav {
 
 .service p {
 	font-size: 14px;
-	color: #4c4c4c;
 	line-height: 28px;
 }
 
@@ -335,7 +336,7 @@ nav {
 }
 .gallary-listing {
 	display: flex;
-	max-width: 75%;
+	max-width: 80%;
 	margin: auto;
 	align-content: space-around;
 }
@@ -410,21 +411,114 @@ nav {
 }
 
 .features {
-	width: 70vw;
-	margin: auto;
-	height: 100vh;
-	/* border: 2px solid red; */
+	border: 2px solid blue;
 	text-align: center;
-	margin-top: 50px;
 	padding: 30px 0px;
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
+	margin: auto;
 }
 
 .features-listing {
 	text-align: left;
 	width: auto;
-	max-width: 50%;
-	/* margin:auto; */
-	border: 2px solid red;
 	flex: 0 0 50%;
+	padding-left: 15px;
+}
+
+.feature {
+	display: flex;
+	justify-content: space-around;
+	background: #f7f7f7;
+	padding: 20px 20px;
+	border-radius: 10px;
+	margin: 4%;
+	box-shadow: -3px 7px 39px -5px rgb(0 0 0);
+	margin-left: auto;
+	width: 100%;
+}
+
+.text-desc-style {
+	font-size: 14px;
+	color: #4c4c4c;
+	line-height: 28px;
+	letter-spacing: 0px;
+}
+
+.feature .gallary-text {
+	max-width: 100%;
+}
+
+.feature img {
+	max-width: 100%;
+	padding-right: 60px;
+	padding-left: 60px;
+	text-align: center !important;
+}
+
+.feature-container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.box3 {
+	display: flex;
+	margin: 3% 5%;
+	justify-content: space-around;
+}
+
+.plantation-image {
+	justify-content: center;
+	padding: 4% 0px;
+
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.plan-prices {
+	background: url("/image/forest.jpg") no-repeat center;
+}
+
+.price-cards {
+	display: flex;
+	margin-bottom: 1.5rem;
+	width: 70%;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	align-content: center;
+	margin: auto;
+}
+.price-cards .card-golden h4 {
+	margin-bottom: 1.5rem;
+}
+
+.card {
+	background: #fff;
+	padding: 1.5em 3em;
+	box-shadow: 0 0 8px 0 rgb(161 161 161 / 50%);
+	text-align: center;
+}
+.card h4 {
+	padding: 1.5em 1.5em;
+}
+.count li {
+	font-size: 13px;
+	color: #969696;
+	padding-top: 11px;
+	display: block;
+	list-style-type: none;
+	padding-top: 11px;
+}
+.price-section {
+	padding: 3.5rem 0.5rem;
+}
+.gallary-service h2,
+.gallary-text p {
+	color: #fff;
+}
+.gallary-service h3 {
+	font-size: 20px;
 }

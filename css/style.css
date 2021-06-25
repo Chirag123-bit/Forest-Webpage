@@ -23,7 +23,6 @@ h6 {
 	color: white;
 	min-height: 800px;
 	height: 100vh;
-	position: relative;
 }
 
 #logo {
@@ -154,6 +153,7 @@ nav {
 .leaf-img {
 	max-width: 50%;
 	padding: 0px 60px;
+	position: relative;
 }
 
 .about-us {
@@ -198,6 +198,7 @@ nav {
 	width: auto;
 	max-width: 50%;
 	flex: 0 0 50%;
+	position: relative;
 }
 .box2 h5 {
 	font-size: 22px;
@@ -519,4 +520,49 @@ nav {
 
 .gallary-service h3 {
 	font-size: 20px;
+}
+
+.testimonials {
+	width: 80%;
+	margin: auto;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+
+.image-thumbnail {
+	padding: 0.25rem;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	border-radius: 0.25rem;
+	width: max-content;
+	height: auto;
+}
+.image-thumbnail img {
+	padding: 0px;
+}
+
+.client-info {
+	font-size: 15px;
+	color: #000;
+}
+
+.client-margin {
+	margin-top: 0.5rem;
+}
+
+.client-desc {
+	font-size: 14px;
+	color: #4c4c4c;
+	line-height: 30px;
+	margin-top: 1rem!;
+}
+
+.client {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding: 3.5rem;
+}
+.clients {
+	display: flex;
+	justify-content: space-between;
 }

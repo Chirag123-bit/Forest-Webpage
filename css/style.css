@@ -587,9 +587,79 @@ nav {
 	justify-content: space-between;
 }
 
-.green-banner {
+.green-banner > .stats > .stat-contents {
+	text-align: center;
+}
+
+.white-desc-text {
+	font-size: 37px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.black-p {
+	font-size: 16px;
+	color: #4c4c4c;
+	line-height: 28px;
+}
+.play-icon {
+	width: 40%;
+	margin: 0 auto;
+	background-clip: padding-box;
+	text-align: center;
+	transition: all 1.5s ease;
+}
+.green-banner > .stats {
+	padding: 4rem;
+}
+
+.play-icon:hover {
+	transform: scale(2);
+	transition: all 1s ease;
+}
+.volunters {
+	padding: 6rem;
+}
+.volunter-block {
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5rem;
+}
+.volunter {
+	text-align: center;
+}
+
+.blogs {
+	background: url("/image/color-forest.jpg") no-repeat center;
+	padding-top: 5rem;
+}
+.blog-block {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem 8rem;
+}
+.blog {
+	background: #fff;
+	padding: 20px 20px;
+	width: 30%;
+}
+
+.blog-image img {
+	width: 100%;
+}
+
+.date-tag {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+.date-tag a {
+	text-decoration: none;
+	color: black;
+}
+
+.blogs p {
+	font-size: 16px;
+	color: #4c4c4c;
+	line-height: 28px;
 }

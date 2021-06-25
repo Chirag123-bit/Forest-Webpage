@@ -22,7 +22,6 @@ h6 {
 	background: url(/image/forest.jpg) no-repeat center;
 	color: white;
 	min-height: 800px;
-	height: 100vh;
 }
 
 #logo {
@@ -147,19 +146,18 @@ nav {
 	color: #a3c962;
 }
 
+.service-listing .service h3 {
+	font-size: 20px;
+	font-size: auto;
+}
+
 .visions {
 	text-transform: uppercase;
-}
-.leaf-img {
-	max-width: 50%;
-	padding: 0px 60px;
-	position: relative;
 }
 
 .about-us {
 	width: 70vw;
 	margin: auto;
-	height: 100vh;
 	text-align: center;
 	margin-top: 50px;
 	padding: 30px 0px;
@@ -188,21 +186,48 @@ nav {
 
 .box2 {
 	display: flex;
-	align-content: space-between;
+	justify-content: space-between;
 	margin-top: 8%;
 	flex-wrap: wrap;
+	/* margin: auto; */
+	/* border: 2px solid red; */
 }
 
+.leaf-img img {
+	width: 100%;
+}
 .mission {
 	text-align: left;
 	width: auto;
-	max-width: 50%;
+	max-width: 55%;
 	flex: 0 0 50%;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* border: 2px solid blue; */
+	flex-wrap: wrap;
+	flex: 2;
+}
+.percentage {
+	display: flex;
+	justify-content: space-between;
+}
+.perc {
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.perc h5 {
+	justify-content: center;
+	align-content: center;
+	width: max-content;
+	height: max-content;
+	text-align: right;
+	margin: auto;
+	padding-top: 1.5rem;
 }
 .box2 h5 {
 	font-size: 22px;
-	margin-bottom: 10px;
+	justify-content: center;
 }
 
 .box2 h6 {
@@ -217,18 +242,13 @@ nav {
 	letter-spacing: 1px;
 	padding: 10px 0px;
 	text-align: left;
-	width: 85%;
 	line-height: 28px;
 }
 
-.percentage {
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-}
-
 .percentage img {
-	width: 80%;
+	width: 90%;
+	justify-content: center;
+	align-content: center;
 }
 
 .planting img {
@@ -241,7 +261,6 @@ nav {
 
 .services {
 	background-image: url("/image/trees.jpg");
-	height: 100vh;
 	padding-top: 80px;
 }
 .service-intro {
@@ -425,6 +444,8 @@ nav {
 	width: auto;
 	flex: 0 0 50%;
 	padding-left: 15px;
+	display: flex;
+	flex-direction: column;
 }
 
 .feature {
@@ -436,7 +457,7 @@ nav {
 	margin: 4%;
 	box-shadow: -3px 7px 39px -5px rgb(0 0 0);
 	margin-left: auto;
-	width: 100%;
+	min-width: 100%;
 }
 
 .text-desc-style {
@@ -451,10 +472,8 @@ nav {
 }
 
 .feature img {
-	max-width: 100%;
-	padding-right: 60px;
-	padding-left: 60px;
-	text-align: center !important;
+	max-width: 20em;
+	text-align: center;
 }
 
 .feature-container {
@@ -469,6 +488,7 @@ nav {
 	display: flex;
 	margin: 3% 5%;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .plantation-image {
@@ -486,7 +506,7 @@ nav {
 .price-cards {
 	display: flex;
 	margin-bottom: 1.5rem;
-	width: 70%;
+	width: 75%;
 	justify-content: space-between;
 	text-align: center;
 	flex-wrap: wrap;
@@ -565,4 +585,11 @@ nav {
 .clients {
 	display: flex;
 	justify-content: space-between;
+}
+
+.green-banner {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
 }

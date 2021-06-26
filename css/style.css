@@ -222,7 +222,7 @@ nav {
 	justify-content: space-between;
 	flex-wrap: no-wrap;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
 	.percentage {
 		display: flex;
 		flex-direction: column;
@@ -231,26 +231,28 @@ nav {
 
 	.features-listing {
 		text-align: left;
-		width: 1000px;
+		width: 100%;
 		padding-left: 15px;
 		display: block;
 		flex: 0 0 0;
 		color: red;
 	}
 	.plan-prices {
-		min-height: min-content;
+		height: auto;
 	}
-	/* .price-cards {
-		flex-wrap: wrap;
-	} */
+	.price-cards {
+		/* flex-wrap: wrap; */
+		max-width: 100% !important;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+	}
 	.card {
-		width: 100%;
+		width: 100% !important;
 		margin: 0.2rem;
 		padding: 0px 0px !important;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-content: space-between;
-		text-align: center;
+		text-align: center !important;
+		overflow: hidden;
 	}
 	.card #join {
 		margin: 0px !important;
@@ -265,8 +267,12 @@ nav {
 		padding: 0px !important;
 	}
 }
-
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
+	.card h4 {
+		padding: 0px !important;
+	}
+}
+@media only screen and (max-width: 1200px) {
 	.green-text {
 		width: auto !important;
 	}
@@ -560,18 +566,18 @@ nav {
 
 .plan-prices {
 	background: url("/image/forest.jpg") no-repeat center;
-	padding: 2rem;
+	/* padding: 2rem; */
 }
 
 .price-cards {
 	display: flex;
-	margin-bottom: 1.5rem;
+	padding-bottom: 2rem !important;
 	width: 75%;
 	justify-content: space-between;
 	text-align: center;
 	margin: auto;
 	overflow: hidden;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 
 .card {
@@ -581,12 +587,9 @@ nav {
 	padding: 1.5em 3em;
 	box-shadow: 0 0 8px 0 rgb(161 161 161 / 50%);
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 }
 .card h4 {
-	padding: 1.5em 1.5em;
+	padding: 1em;
 }
 .count li {
 	font-size: 13px;
@@ -602,6 +605,18 @@ nav {
 
 .gallary-service h3 {
 	font-size: 20px;
+}
+
+.price-intro {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	justify-content: center;
+	/* display: flex; */
 }
 
 .testimonials {

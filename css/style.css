@@ -237,6 +237,39 @@ nav {
 		flex: 0 0 0;
 		color: red;
 	}
+	.plan-prices {
+		min-height: min-content;
+	}
+	/* .price-cards {
+		flex-wrap: wrap;
+	} */
+	.card {
+		width: 100%;
+		margin: 0.2rem;
+		padding: 0px 0px !important;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-between;
+		text-align: center;
+	}
+	.card #join {
+		margin: 0px !important;
+		padding: 0px !important;
+		border-radius: 3px !important;
+	}
+	.card h4 {
+		padding: 0px !important;
+	}
+
+	.blog-block {
+		padding: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.green-text {
+		width: auto !important;
+	}
 }
 .perc {
 	justify-content: space-between;
@@ -538,6 +571,7 @@ nav {
 	text-align: center;
 	margin: auto;
 	overflow: hidden;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -547,6 +581,9 @@ nav {
 	padding: 1.5em 3em;
 	box-shadow: 0 0 8px 0 rgb(161 161 161 / 50%);
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 .card h4 {
 	padding: 1.5em 1.5em;

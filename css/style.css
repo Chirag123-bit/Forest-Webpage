@@ -4,6 +4,7 @@
 		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -219,6 +220,23 @@ nav {
 .percentage {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: no-wrap;
+}
+@media only screen and (max-width: 1000px) {
+	.percentage {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.features-listing {
+		text-align: left;
+		width: 1000px;
+		padding-left: 15px;
+		display: block;
+		flex: 0 0 0;
+		color: red;
+	}
 }
 .perc {
 	justify-content: space-between;
@@ -302,7 +320,6 @@ nav {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 50px;
-	/* flex-direction: column; */
 }
 
 .service {
@@ -510,6 +527,7 @@ nav {
 
 .plan-prices {
 	background: url("/image/forest.jpg") no-repeat center;
+	padding: 2rem;
 }
 
 .price-cards {
@@ -518,16 +536,14 @@ nav {
 	width: 75%;
 	justify-content: space-between;
 	text-align: center;
-	flex-wrap: wrap;
-	align-content: center;
 	margin: auto;
-}
-.price-cards .card-golden h4 {
-	margin-bottom: 1.5rem;
+	overflow: hidden;
 }
 
 .card {
 	background: #fff;
+	max-width: 25%;
+	margin: 0px 0px 0px 10px;
 	padding: 1.5em 3em;
 	box-shadow: 0 0 8px 0 rgb(161 161 161 / 50%);
 	text-align: center;
@@ -731,4 +747,37 @@ form {
 	border-radius: 0px;
 	box-shadow: 0px 1px 1px 0px black;
 	margin-bottom: 2rem;
+}
+
+.map-section iframe {
+	width: 100%;
+	height: 21.5em;
+	border: 1px solid #dadada;
+	padding: 7px;
+}
+
+.footer {
+	padding-top: 2rem;
+	background: #a3c962;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+.gototop {
+	padding-bottom: 1rem;
+}
+
+footer {
+	padding-top: 8rem 2rem 2rem 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-social-media-links {
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+.footer-social-media-links i {
+	padding: 2rem;
 }

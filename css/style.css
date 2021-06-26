@@ -480,9 +480,9 @@ nav {
 	max-width: 100%;
 }
 
-.feature img {
-	max-width: 20em;
+.feature span {
 	text-align: center;
+	padding: 2rem;
 }
 
 .feature-container {
@@ -594,6 +594,7 @@ nav {
 .clients {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .green-banner > .stats > .stat-contents {
@@ -633,6 +634,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 5rem;
+	flex-wrap: wrap;
 }
 .volunter {
 	text-align: center;

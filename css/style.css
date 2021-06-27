@@ -222,11 +222,71 @@ nav {
 	justify-content: space-between;
 	flex-wrap: no-wrap;
 }
+
+@media screen and (max-width: 800px) {
+	.percentage img {
+		width: auto !important;
+		justify-content: center;
+		align-content: center;
+	}
+	.box2 h5 {
+		padding: 0px !important;
+		margin: 0.5rem;
+		color: green;
+	}
+	.box3 {
+		display: block !important;
+		width: 100%;
+	}
+	.features-listing {
+		width: 90%;
+		padding-left: 0px !important;
+	}
+	#left-margin-feat {
+		margin-left: 0px !important;
+	}
+	.feature {
+		margin: 4% 0px !important;
+		padding-right: 0px !important;
+	}
+	.image-thumbnail {
+		padding: 0px !important;
+		width: 100%;
+		margin: auto;
+	}
+	.image-thumbnail img {
+		padding: 0px;
+		width: 100% !important;
+	}
+	.client {
+		/* border: 1px solid green; */
+		padding: 0px !important;
+		overflow: hidden;
+	}
+	.clients {
+		border-collapse: collapse;
+	}
+	.blogs {
+		padding-bottom: 5rem;
+	}
+	.testimonials {
+		width: 100% !important;
+	}
+	.testimonials .green-text,
+	.testimonials h6,
+	.client-desc {
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 1100px) {
+	nav {
+		width: 80%;
+	}
 	.percentage {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		width: auto;
 	}
 
 	.features-listing {

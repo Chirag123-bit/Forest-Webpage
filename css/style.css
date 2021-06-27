@@ -266,6 +266,10 @@ nav {
 	.blog-block {
 		padding: 0px !important;
 	}
+	.price-cards {
+		flex-wrap: wrap;
+		align-content: space-between;
+	}
 }
 @media screen and (max-width: 1050px) {
 	.card h4 {
